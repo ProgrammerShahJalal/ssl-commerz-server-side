@@ -139,7 +139,9 @@ client.connect(err => {
     })
 
 });
-
+app.get('/', (req, res) => {
+    res.json('SSL commerz is running')
+})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
